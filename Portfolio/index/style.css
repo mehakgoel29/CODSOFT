@@ -1,13 +1,15 @@
 ul {
   list-style-type: none;
 }
-*{
+
+* {
   margin: 0px;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
-.nav:hover::after{
-  content:"";
+
+a:hover::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -16,9 +18,11 @@ ul {
   width: 100%;
   animation: underlineAnimation 0.5s ease-in;
 }
-.nav:hover{
+
+a:hover {
   cursor: pointer;
 }
+
 @keyframes underlineAnimation {
   from {
     width: 0%;
@@ -28,28 +32,32 @@ ul {
     width: 100%;
   }
 }
-li {
+
+li a {
   float: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 40px;
   padding: 4px 16px;
   font-size: larger;
   position: relative;
-  padding-bottom: 4px;
-}
-body {
-  background-color:rgb(0, 0, 0);
   color: white;
-  padding: 20px;
+  text-decoration: none;
 }
+
+body {
+  background-color:black;
+  color: white;
+  padding-top: 20px;
+}
+
 #mode {
+  float: right;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color:rgb(233, 14, 79) ;
+  color: rgb(233, 14, 79);
+  margin-right: 15px;
 }
+
 #email a {
   text-decoration: none;
   color: rgb(233, 14, 79);
@@ -60,16 +68,20 @@ body {
   padding: 14px 16px;
   font-size: larger;
 }
-#email{
+
+#email {
   float: left;
 }
+
 #email:hover {
   cursor: pointer;
 }
-#mailicon{
+
+#mailicon {
   color: rgb(59, 57, 57);
 }
-.image{
+
+.image {
   width: 500px;
   height: 600px;
   border-radius: 50%;
@@ -78,27 +90,33 @@ body {
   box-shadow: 0 0 50px rgb(233, 14, 79);
   margin-top: 28px;
 }
-.text{
+
+.text {
   float: left;
 }
-#p2{
+
+#p2 {
   font-size: 72px;
   color: rgb(233, 14, 79);
   margin-left: 199px;
   font-weight: 4000;
 }
-#p1{
+
+#p1 {
   margin-top: 150px;
   margin-left: 200px;
   display: flex;
 }
-.mail{
+
+.logo {
   text-decoration: none;
-  color:white;
+  color: white;
   font-size: larger;
   float: left;
   font-weight: bold;
+  margin-left: 15px;
 }
+
 #typing-animation {
   position: relative;
   font-size: 30px;
@@ -139,4 +157,8 @@ body {
   to {
     width: 0;
   }
+}
+
+.navbar {
+  position: sticky;
 }

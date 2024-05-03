@@ -1,36 +1,38 @@
 let mode = document.querySelector("#mode");
 let currMode = "light";
 let icon = document.getElementById('mode');
-let mail = document.getElementById('email');
+let logo = document.querySelector('.logo');
+let navLinks = document.querySelectorAll('.nav a');
 
 mode.addEventListener("click", () => {
-  if (currMode === "light") {
-    currMode = "dark";
-    document.querySelector("body").style.backgroundColor = "black";
-    document.querySelector("body").style.color = "white";
-    iconColor(true);
-  } else {
-    currMode = "light";
-    document.querySelector("body").style.backgroundColor = "white";
-    document.querySelector("body").style.color = "black";
-    iconColor(false);
-  }
+    if (currMode === "light") {
+        currMode = "dark";
+        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.color = "white";
+        iconColor(true);
+    } else {
+        currMode = "light";
+        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.color = "black";
+        iconColor(false);
+    }
 });
 
 function iconColor(isDarkMode) {
-  if (isDarkMode) {
-    icon.style.color = 'rgb(233, 14, 79)';
-    mail.style.color = '  rgb(233, 14, 79)';
-
-  } else {
-    icon.style.color = 'rgb(233, 14, 79)';
-    mail.style.color = '  rgb(233, 14, 79)';
-  }
+    if (isDarkMode) {
+        icon.style.color = 'rgb(233, 14, 79)';
+        logo.style.color = 'white';
+        navLinks.forEach(link => link.style.color = 'white');
+    } else {
+        icon.style.color = 'rgb(233, 14, 79)';
+        logo.style.color = 'black';
+        navLinks.forEach(link => link.style.color = 'black');
+    }
 }
 
 
 
-
+/*
 const typingAnimationElement = document.getElementById('typing-animation');
 
 // Create an array of typing text
@@ -54,3 +56,4 @@ function playTypingAnimation(text) {
 
 // Start the typing animation loop
 playTypingAnimation(typingTexts[0]);
+*/
