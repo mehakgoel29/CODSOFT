@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#connect {
+    color: rgb(233, 14, 79);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    float: right;
+}
+
+#fname {
+    height: 50px;
+    width: 500px;
+    background-color: gray;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#email {
+    height: 50px;
+    width: 500px;
+    background-color: gray;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.text {
+    float: left;
+}
+
+textarea {
+    background-color: gray;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+input::placeholder {
+    padding-left: 20px;
+    font-size: 18px;
+    color: rgb(236, 236, 235);
+}
+
+textarea::placeholder {
+    color: rgb(236, 236, 235);
+    padding-left: 20px;
+    font-size: larger;
+}
+
+button {
+    background-color: rgb(233, 14, 79);
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px rgb(233, 14, 79);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+#email a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-size: medium;
+    background-color: transparent;
+}
+
+#email {
+    float: left;
+}
+
+#email:hover {
+    cursor: pointer;
+}
+
+#mailicon {
+    color: rgb(233, 14, 79);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-10px);
+}
+
+#email2 a {
+    text-decoration: none;
+    color:#ababab;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: larger;
+}
+
+#email2:hover {
+    cursor: pointer;
+}
+
+#mailicon {
+    color: rgb(233, 14, 79);
+}
