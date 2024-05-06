@@ -24,9 +24,9 @@ p {
 }
 
 form {
-    float: right;
+    float: left;
+    margin-left: 200px;
 }
-
 #fname {
     height: 50px;
     width: 500px;

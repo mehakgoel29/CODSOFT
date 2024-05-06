@@ -1,0 +1,342 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: rgb(3, 1, 27);
+  color: white;
+  padding-top: 10px;
+  position: absolute;
+}
+/*------------------------about----------------------------------- */
+.about {
+  min-height: 100vh;
+  ul {
+    list-style-type: none;
+  }  
+  a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: rgb(233, 14, 79);
+    width: 100%;
+    animation: underlineAnimation 0.3s ease-in;
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+  
+  @keyframes underlineAnimation {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  li a {
+    float: right;
+    height: 40px;
+    padding: 4px 16px;
+    font-size: larger;
+    position: relative;
+    color: white;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color:black;
+    color: white;
+    padding-top: 20px;
+  }
+  
+  #mode {
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(233, 14, 79);
+    margin-right: 15px;
+  }
+  
+  #email a {
+    text-decoration: none;
+    color: rgb(233, 14, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 14px 16px;
+    font-size: larger;
+  }
+  
+  #email {
+    float: left;
+  }
+  
+  #email:hover {
+    cursor: pointer;
+  }
+  
+  #mailicon {
+    color: rgb(59, 57, 57);
+  }
+  
+  .image {
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+    float: right;
+    object-fit: cover;
+    box-shadow: 0 0 50px rgb(233, 14, 79);
+    margin-top: 28px;
+  }
+  
+  .text {
+    float: left;
+  }
+  
+  #p2 {
+    font-size: 72px;
+    color: rgb(233, 14, 79);
+    margin-left: 199px;
+    font-weight: 4000;
+  }
+  
+  #p1 {
+    margin-top: 150px;
+    margin-left: 200px;
+    display: flex;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    float: left;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  .navbar {
+    position: sticky;
+  }
+}
+/*---------------------------------------------------------------- blogs--------------------------------------------------------------------------------- */
+
+.blogs {
+  min-height: 100vh;
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  body{
+    background-image: linear-gradient(black,rgb(83, 83, 83),black);
+  }
+  .card {
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.5s;
+
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 8px rgb(233, 14, 79);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .card-content p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+  }
+
+  h1 {
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 50px 40px 10px rgb(233, 14, 79);
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 8px rgb(70, 2, 2);
+  }
+}
+
+/*---------------------------------------------------------------- contact--------------------------------------------------------------------------------- */
+.contact {
+  min-height: 100vh;
+  p {
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  #connect {
+    color: rgb(233, 14, 79);
+  }
+
+  form {
+    float: left;
+    margin-left: 200px;
+  }
+
+  #fname {
+    height: 50px;
+    width: 500px;
+    background-color: gray;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  #email {
+    height: 50px;
+    width: 500px;
+    background-color: gray;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    float: left;
+  }
+
+  textarea {
+    background-color: gray;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  input::placeholder {
+    padding-left: 20px;
+    font-size: 18px;
+    color: rgb(236, 236, 235);
+  }
+
+  textarea::placeholder {
+    color: rgb(236, 236, 235);
+    padding-left: 20px;
+    font-size: larger;
+  }
+
+  button {
+    background-color: rgb(233, 14, 79);
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  button:hover {
+    box-shadow: 0px 0px 10px rgb(233, 14, 79);
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  #email a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-size: medium;
+    background-color: transparent;
+  }
+
+  #email {
+    float: left;
+  }
+
+  #email:hover {
+    cursor: pointer;
+  }
+
+  #mailicon {
+    color: rgb(233, 14, 79);
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+
+  .social-icons a:hover {
+    transform: translateY(-10px);
+  }
+
+  #email2 a {
+    text-decoration: none;
+    color: #ababab;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: larger;
+  }
+
+  #email2:hover {
+    cursor: pointer;
+  }
+
+  #mailicon {
+    color: rgb(233, 14, 79);
+  }
+}

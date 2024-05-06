@@ -5,7 +5,7 @@
     font-family: "poppins",sans-serif;
 }
 body{
-    background-image: linear-gradient(to bottom ,black,white);
+    background-image: linear-gradient(black,rgb(83, 83, 83),black);
 }
 .card-container{
     display: flex;
@@ -20,8 +20,13 @@ body{
     overflow: hidden;
     margin: 20px;
     /* margin-right: 100px; */
-    box-shadow: 8px 8px 8px rgb(233, 14, 79);
+    /* box-shadow: 8px 8px 8px rgb(233, 14, 79); */
+    transition: transform 0.5s;
 
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 8px rgb(233, 14, 79);
 }
 .card img{
     width: 100%;
@@ -53,5 +58,8 @@ h1{
     font-weight: bold;
     font-size: 100px;
     text-align: center;
-    text-shadow: 50px 40px 12px rgb(233, 14, 79);
+    text-shadow: 50px 40px 10px rgb(233, 14, 79);
+}
+.btn:hover{
+  box-shadow: 0 0 8px rgb(70, 2, 2) ;
 }
