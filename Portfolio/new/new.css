@@ -326,6 +326,66 @@ body {
     margin-top: 40px;
   }
 }
+/*---------------------------------------------------------------- work--------------------------------------------------------------------------------- */
+
+.work{
+  min-height: max-content;
+  min-width: 98vw;
+  background-image: linear-gradient(black,rgb(59, 61, 61),black);
+  h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow:10px 10px 2px rgb(142, 141, 141);
+  }
+  img{
+    width: 325px;
+    height: 200px;
+    border-radius: 15px;
+    transition: transform 1s;
+  }
+  img:hover{
+    transform:translateY(-20px);
+  }
+  .images{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .even{
+    float: left;
+  }
+  .odd{
+    float : right;
+  }
+  .evenpara{
+    float:right ;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .oddpara{
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  h3{
+    color: rgb(233, 14, 79);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  hr {
+    border: none;
+    border-top: 2px solid #8f8e8e;
+    margin-top: 40px;
+    clear: both;
+   }
+  p{
+    width: 500px;
+  }
+}
 /*---------------------------------------------------------------- contact--------------------------------------------------------------------------------- */
 .contact {
   min-height: 100vh;
@@ -407,7 +467,7 @@ body {
   }
 
   button:hover {
-    box-shadow: 0px 0px 1px rgb(233, 14, 79);
+    box-shadow: 0px 0px 10px rgb(233, 14, 79);
   }
 
   img {
