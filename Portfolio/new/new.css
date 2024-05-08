@@ -10,7 +10,7 @@ body {
   position: absolute;
 }
 /*------------------------about----------------------------------- */
-.about {
+#about {
   height: 100vh;
   width: 98vw;
   ul {
@@ -191,7 +191,7 @@ body {
   }
 }
 /*---------------------------------------------------------------- skills--------------------------------------------------------------------------------- */
-.skills{
+#skills{
   min-width: 98vw;
   min-height: 90vh;
   img{
@@ -235,7 +235,7 @@ body {
 
 }
 /*---------------------------------------------------------------- blogs--------------------------------------------------------------------------------- */
-.blogs {
+#blogs {
   background-image: linear-gradient(black,rgb(83, 83, 83),black);
   min-height: 100vh;
   .card-container {
@@ -300,7 +300,7 @@ body {
   }
 }
 /*---------------------------------------------------------------- achievements--------------------------------------------------------------------------------- */
-.achievements{
+#achievements{
   min-height: max-content;
   min-width: 98vw;
   background-image: linear-gradient(black,rgb(59, 61, 61),black);
@@ -328,7 +328,7 @@ body {
 }
 /*---------------------------------------------------------------- work--------------------------------------------------------------------------------- */
 
-.work{
+#work{
   min-height: max-content;
   min-width: 98vw;
   background-image: linear-gradient(black,rgb(59, 61, 61),black);
@@ -387,7 +387,7 @@ body {
   }
 }
 /*---------------------------------------------------------------- contact--------------------------------------------------------------------------------- */
-.contact {
+#contact {
   min-height: 100vh;
   p {
     font-size: 100px;
@@ -530,4 +530,63 @@ body {
     color: rgb(233, 14, 79);
   }
 }
-  
+ /*--------------------------------------------footer------------------------------------------------  */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-info {
+  width: 30%;
+}
+
+.footer-info h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-info p, .footer-info ul {
+  color: #aaa;
+}
+
+.footer-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-info ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-info ul li i {
+  margin-right: 5px;
+}
+
+.socialicons {
+  display: flex;
+}
+
+.socialicons li {
+  margin-right: 10px;
+}
+
+.socialicons a {
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+.socialicons a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+}
