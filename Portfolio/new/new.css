@@ -9,6 +9,9 @@ body {
   padding-top: 10px;
   position: absolute;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*------------------------about----------------------------------- */
 #about {
   height: 100vh;
@@ -92,13 +95,11 @@ body {
     height: 2px;
     background-color: rgb(247, 35, 99);
     width: 100%;
-    /* animation: underlineAnimation 0.3s ease-in; */
-    animation: underlineAnimation 0.3s ease-in;
   }
   
   a:hover {
     cursor: pointer;
-    animation: underlineAnimation 0.3s ease-in;
+    animation: underlineAnimation 2s ease-in;
   }
   
   @keyframes underlineAnimation {
