@@ -113,10 +113,10 @@ html {
   }
   .navbar a:hover::after {
     width: 100%;
-    color:rgb(255, 0, 162);
+    color:rgb(233, 14, 79);
     
   }
-  li a {
+  ul li a {
     float: right;
     height: 40px;
     padding: 4px 16px;
