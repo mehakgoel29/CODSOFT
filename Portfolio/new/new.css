@@ -12,6 +12,20 @@ body {
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:white; 
+}
+::-webkit-scrollbar-thumb {
+  background-color:#ababab;
+  border-radius: 2px; 
+  height: 100px;
+}
+
+
 /*------------------------about----------------------------------- */
 #about {
   height: 100vh;
@@ -71,7 +85,7 @@ html {
     width:auto;
   }
   #p3{
-    margin-top: 20px;
+    margin-top: 0px;
     width:500px;
     margin-left:80px ;
     font-size: medium;
@@ -87,31 +101,21 @@ html {
     margin-left: 80px;
     text-shadow: 50px 40px 12px #938e8e;
   } 
-  a:hover::after {
+  .navbar a::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 0;
     height: 2px;
-    background-color: rgb(247, 35, 99);
+    background-color:rgb(233, 14, 79);
+    transition: width 0.3s ease-in-out;
+  }
+  .navbar a:hover::after {
     width: 100%;
+    color:rgb(255, 0, 162);
+    
   }
-  
-  a:hover {
-    cursor: pointer;
-    animation: underlineAnimation 2s ease-in;
-  }
-  
-  @keyframes underlineAnimation {
-    from {
-      width: 0%;
-    }
-  
-    to {
-      width: 100%;
-    }
-  }
-  
   li a {
     float: right;
     height: 40px;
@@ -121,13 +125,6 @@ html {
     color: white;
     text-decoration: none;
   }
-  
-  body {
-    background-color:black;
-    color: white;
-    padding-top: 20px;
-  }
-  
   #mode {
     float: right;
     background-color: transparent;
@@ -329,7 +326,7 @@ html {
 }
 /*---------------------------------------------------------------- work--------------------------------------------------------------------------------- */
 
-#work{
+#projects{
   min-height: max-content;
   min-width: 98vw;
   background-image: linear-gradient(black,rgb(59, 61, 61),black);
@@ -337,7 +334,6 @@ html {
     font-size: 70px;
     text-align: center;
     font-weight: bold;
-    text-shadow:10px 10px 2px rgb(142, 141, 141);
   }
   img{
     width: 325px;
@@ -397,7 +393,7 @@ html {
   }
 
   #connect {
-    color: rgb(233, 14, 79);
+    color: rgba(248, 51, 110, 0.952);
   }
 
   form {
@@ -457,7 +453,7 @@ html {
   }
 
   button {
-    background-color: rgb(233, 14, 79);
+    background-color:rgba(248, 51, 110, 0.952);
     color: white;
     height: 50px;
     width: 200px;
@@ -468,7 +464,8 @@ html {
   }
 
   button:hover {
-    box-shadow: 0px 0px 10px rgb(233, 14, 79);
+    box-shadow: 0px 0px 19px rgba(248, 51, 110, 0.952);
+    border-radius: 0;
   }
 
   img {
@@ -493,7 +490,7 @@ html {
   }
 
   #mailicon {
-    color: rgb(233, 14, 79);
+    color:rgba(248, 51, 110, 0.952);
   }
 
   ul {
@@ -528,13 +525,13 @@ html {
   }
 
   #mailicon {
-    color: rgb(233, 14, 79);
+    color:rgba(248, 51, 110, 0.952);
   }
 }
  /*--------------------------------------------footer------------------------------------------------  */
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color:rgba(248, 51, 110, 0.952);
+  color:black;
   padding: 3rem 0;
 }
 
@@ -550,15 +547,17 @@ html {
 .footer-info h3 {
   font-weight: bold;
   margin-bottom: 1rem;
+  margin-left: 100px;
 }
 
 .footer-info p, .footer-info ul {
-  color: #aaa;
+  color: white;
 }
 
 .footer-info ul {
   list-style-type: none;
   padding: 0;
+  padding-left: 90px;
 }
 
 .footer-info ul li {
@@ -578,7 +577,7 @@ html {
 }
 
 .socialicons a {
-  color: #aaa;
+  color:white;
   font-size: 1.5rem;
 }
 
